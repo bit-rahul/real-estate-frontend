@@ -9,7 +9,7 @@ function Account() {
     useEffect(() => {
         console.log("here", tenantData.tenant)
         if (tenantData.tenant)
-            Axios.get(`/api/properties/applied/${tenantData.tenant.id}`)
+            Axios.get(`https://whispering-escarpment-26214.herokuapp.com/api/properties/applied/${tenantData.tenant.id}`)
                 .then((res) => {
                     setHomes(res.data)
                 })
