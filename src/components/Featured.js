@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const Featured = () => {
     const location = useLocation();
-    const getUrl = 'https://mighty-temple-22601.herokuapp.com/api/properties';
+    const getUrl = 'https://whispering-escarpment-26214.herokuapp.com/api/properties';
     const [homes, setHomes] = useState([]);
     useEffect(() => {
         axios.get(getUrl)

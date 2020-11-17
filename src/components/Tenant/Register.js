@@ -27,7 +27,7 @@ const Register = () => {
     };
 
     const registerTenant = () => {
-        const postURL = 'https://mighty-temple-22601.herokuapp.com/api/tenant/register';
+        const postURL = 'https://whispering-escarpment-26214.herokuapp.com/api/tenant/register';
 
         axios.post(postURL, {
             name,

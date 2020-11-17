@@ -29,7 +29,7 @@ const Login = () => {
 
     const tenantLogin = (e) => {
         e.preventDefault();
-        const postURL = 'https://mighty-temple-22601.herokuapp.com/api/tenant/login';
+        const postURL = 'https://whispering-escarpment-26214.herokuapp.com/api/tenant/login';
 
         axios.post(postURL, {
             email,

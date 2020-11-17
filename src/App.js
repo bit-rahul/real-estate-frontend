@@ -45,7 +45,7 @@ const App = () => {
                 sessionStorage.removeItem("mtp");
                 token = "";
             }
-            const isTokenValid = await Axios.post("https://mighty-temple-22601.herokuapp.com/api/tenant/isTokenValid",
+            const isTokenValid = await Axios.post("https://whispering-escarpment-26214.herokuapp.com/api/tenant/isTokenValid",
                 null,
                 {
                     headers: {
@@ -54,7 +54,7 @@ const App = () => {
                 });
 
             if (isTokenValid.data) {
-                const tenantRes = await Axios.get("https://mighty-temple-22601.herokuapp.com/api/tenant",
+                const tenantRes = await Axios.get("https://whispering-escarpment-26214.herokuapp.com/api/tenant",
                     {
                         headers: {
                             "token": token

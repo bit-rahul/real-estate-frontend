@@ -31,7 +31,7 @@ const PropertyDetails = () => {
 
     const isApplied = () => {
         if (home && tenantData.tenant)
-            Axios.get(`https://mighty-temple-22601.herokuapp.com/api/properties/isApplied`, {
+            Axios.get(`https://whispering-escarpment-26214.herokuapp.com/api/properties/isApplied`, {
                 params: {
                     id: home._id,
                     tenantID: tenantData.tenant.id
@@ -63,7 +63,7 @@ const PropertyDetails = () => {
         postData.append('message', message);
         postData.append('tenantID', tenantData.tenant.id);
 
-        Axios.post(`https://mighty-temple-22601.herokuapp.com/api/home-apply/${location.state._id}`, postData)
+        Axios.post(`https://whispering-escarpment-26214.herokuapp.com/api/home-apply/${location.state._id}`, postData)
             .then(resp => {
                 setOpen(true);
                 setSeverity('success');

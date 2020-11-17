@@ -22,7 +22,7 @@ const HomeList = () => {
 
     const listProperty = (e) => {
         e.preventDefault();
-        const postURL = 'https://mighty-temple-22601.herokuapp.com/api/home-listing';
+        const postURL = 'https://whispering-escarpment-26214.herokuapp.com/api/home-listing';
         const postData = new FormData();
         postData.append('rent', rent);
         postData.append('country', country);
